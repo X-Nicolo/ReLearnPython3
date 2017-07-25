@@ -23,7 +23,7 @@ def log(func):
     def wrapper(*args, **kw):
         print('call %s():' % func.__name__)
         return func(*args, **kw)
-    return wrapper
+    return wrapper  
 
 # 观察上面的log，因为它是一个decorator，
 # 所以接受一个函数作为参数，并返回一个函数。
